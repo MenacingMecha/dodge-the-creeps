@@ -2,6 +2,9 @@ extends CanvasLayer
 
 signal start_game
 
+func _ready():
+    $TweetButton.hide()  # tweet button starts hidden by default
+
 func show_message(text):
     $MessageLabel.text = text
     $MessageLabel.show()
@@ -13,6 +16,7 @@ func show_game_over():
     $StartButton.show()
     $MessageLabel.text = "Dodge the\nCreeps!"
     $MessageLabel.show()
+    $TweetButton.show()
 
 func update_score(score):
     $ScoreLabel.text = str(score)

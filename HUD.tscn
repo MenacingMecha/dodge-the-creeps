@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://HUD.gd" type="Script" id=1]
 [ext_resource path="res://fonts/Xolonium-Regular.ttf" type="DynamicFontData" id=2]
@@ -29,7 +29,15 @@ use_filter = false
 font_data = ExtResource( 2 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="HUD" type="CanvasLayer"]
+[sub_resource type="DynamicFont" id=4]
+
+size = 20
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 2 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="HUD" type="CanvasLayer" index="0"]
 
 layer = 1
 offset = Vector2( 0, 0 )
@@ -138,14 +146,14 @@ bus = "Master"
 
 [node name="TweetButton" type="Button" parent="." index="4"]
 
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 120.0
-margin_top = 460.0
-margin_right = 317.0
-margin_bottom = 510.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = -280.0
+margin_right = 97.0
+margin_bottom = -230.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -153,13 +161,15 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+custom_fonts/font = SubResource( 4 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-text = "tweet score"
+text = "Tweet Score"
 flat = false
 align = 1
+_sections_unfolded = [ "custom_fonts" ]
 
 [connection signal="timeout" from="MessageTimer" to="." method="_on_MessageTimer_timeout"]
 
