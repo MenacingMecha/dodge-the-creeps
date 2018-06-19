@@ -25,3 +25,11 @@ func _on_StartButton_pressed():
     $StartButton.hide()
     emit_signal("start_game")
     $StartButton/StartSound.play()
+
+func _on_TweetButton_pressed():
+    var score = get_parent().score
+    # opens a web browser, asking for confirmation to make a tweet from the user's account
+    OS.shell_open("https://twitter.com/intent/tweet?text=I scored " + str(score) +  "points!"  # tweet body
+    + "+https%3A%2F%2Ftwitter.com"  # url link to project homepage
+    + "&hashtags=DodgeTheCreeps,gamedev"  # comma seperated hashtags to include at the end of the tweet
+    + "&related=potus,menacingmecha")  # comma seperated related accounts to display after making the tweet

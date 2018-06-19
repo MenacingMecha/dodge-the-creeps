@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemyWalking_2.png-67c480ed60c35e95f5acb0436246b935.stex"
+path="res://.import/playerGrey_walk2.png-3a633eb63e9ea2545b980acbc03eca4e.stex"
 
 [deps]
 
-source_file="res://art/enemyWalking_2.png"
-source_md5="838f40a8b77a0cb387dc5e5aff6bd8d5"
+source_file="res://player/playerGrey_walk2.png"
+source_md5="9fc73e1224a6b16d8fb5d0f667e3aed2"
 
-dest_files=[ "res://.import/enemyWalking_2.png-67c480ed60c35e95f5acb0436246b935.stex" ]
-dest_md5="f3c83e556d129fb193aa0f833d3f1cae"
+dest_files=[ "res://.import/playerGrey_walk2.png-3a633eb63e9ea2545b980acbc03eca4e.stex" ]
+dest_md5="596beded1de352875570362ee213a3e1"
 
 [params]
 

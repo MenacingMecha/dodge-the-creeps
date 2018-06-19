@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enemySwimming_2.png-4c0cbc0732264c4ea3290340bd4a0a62.stex"
+path="res://.import/enemyWalking_2.png-cf3314703fff7b0a18bd21dcfca75167.stex"
 
 [deps]
 
-source_file="res://art/enemySwimming_2.png"
-source_md5="d04b001ba2f4ac6884fdbe44b55fa656"
+source_file="res://mob/enemyWalking_2.png"
+source_md5="838f40a8b77a0cb387dc5e5aff6bd8d5"
 
-dest_files=[ "res://.import/enemySwimming_2.png-4c0cbc0732264c4ea3290340bd4a0a62.stex" ]
-dest_md5="bdc75ce5c86a6b1a590ba62149d2422a"
+dest_files=[ "res://.import/enemyWalking_2.png-cf3314703fff7b0a18bd21dcfca75167.stex" ]
+dest_md5="f3c83e556d129fb193aa0f833d3f1cae"
 
 [params]
 
