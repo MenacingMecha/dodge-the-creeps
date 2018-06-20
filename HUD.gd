@@ -29,6 +29,7 @@ func _on_StartButton_pressed():
     $StartButton.hide()
     emit_signal("start_game")
     $StartButton/StartSound.play()
+    $TweetButton.hide()
 
 func _on_TweetButton_pressed():
     var score = get_parent().score
